@@ -1,4 +1,29 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="1" systemVersion="11A491" minimumToolsVersion="Automatic" sourceLanguage="Swift" usedWithCloudKit="false" userDefinedModelVersionIdentifier="">
-    <elements/>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="17709" systemVersion="19H1615" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="Company" representedClassName=".Company" syncable="YES" codeGenerationType="category">
+        <attribute name="employees" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="founded" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="founder" optional="YES" attributeType="String"/>
+        <attribute name="launchSites" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="name" optional="YES" attributeType="String"/>
+        <attribute name="valuation" optional="YES" attributeType="Decimal" defaultValueString="0.0"/>
+        <relationship name="launches" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Launch" inverseName="parentCompany" inverseEntity="Launch"/>
+    </entity>
+    <entity name="Launch" representedClassName=".Launch" syncable="YES" codeGenerationType="category">
+        <attribute name="article" optional="YES" attributeType="URI"/>
+        <attribute name="datetime" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="launchSuccess" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="missionName" optional="YES" attributeType="String"/>
+        <attribute name="patchImg" optional="YES" attributeType="URI"/>
+        <attribute name="rocketName" optional="YES" attributeType="String"/>
+        <attribute name="rocketType" optional="YES" attributeType="String"/>
+        <attribute name="webcast" optional="YES" attributeType="URI"/>
+        <attribute name="wikipedia" optional="YES" attributeType="URI"/>
+        <attribute name="youtubeId" optional="YES" attributeType="String"/>
+        <relationship name="parentCompany" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Company" inverseName="launches" inverseEntity="Company"/>
+    </entity>
+    <elements>
+        <element name="Company" positionX="-41.53125" positionY="-32.92578125" width="128" height="148"/>
+        <element name="Launch" positionX="133.88671875" positionY="47.12109375" width="128" height="208"/>
+    </elements>
 </model>

@@ -16,6 +16,9 @@
 		FED811EA2786022C00F5C352 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FED811E82786022C00F5C352 /* LaunchScreen.storyboard */; };
 		FED811F52786022D00F5C352 /* spacex_missionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FED811F42786022D00F5C352 /* spacex_missionsTests.swift */; };
 		FED812002786022D00F5C352 /* spacex_missionsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FED811FF2786022D00F5C352 /* spacex_missionsUITests.swift */; };
+		FED81211278606DD00F5C352 /* dataCoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = FED81210278606DD00F5C352 /* dataCoding.swift */; };
+		FED8121627860C4C00F5C352 /* FilterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FED8121527860C4C00F5C352 /* FilterViewController.swift */; };
+		FED8121B27860C8F00F5C352 /* TableViewCells.swift in Sources */ = {isa = PBXBuildFile; fileRef = FED8121A27860C8F00F5C352 /* TableViewCells.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +54,9 @@
 		FED811FB2786022D00F5C352 /* spacex-missionsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "spacex-missionsUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FED811FF2786022D00F5C352 /* spacex_missionsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = spacex_missionsUITests.swift; sourceTree = "<group>"; };
 		FED812012786022D00F5C352 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FED81210278606DD00F5C352 /* dataCoding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = dataCoding.swift; sourceTree = "<group>"; };
+		FED8121527860C4C00F5C352 /* FilterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterViewController.swift; sourceTree = "<group>"; };
+		FED8121A27860C8F00F5C352 /* TableViewCells.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCells.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +110,9 @@
 				FED811DA2786022900F5C352 /* AppDelegate.swift */,
 				FED811DC2786022900F5C352 /* SceneDelegate.swift */,
 				FED811DE2786022900F5C352 /* ViewController.swift */,
+				FED8121527860C4C00F5C352 /* FilterViewController.swift */,
+				FED81210278606DD00F5C352 /* dataCoding.swift */,
+				FED8121A27860C8F00F5C352 /* TableViewCells.swift */,
 				FED811E02786022900F5C352 /* Main.storyboard */,
 				FED811E62786022C00F5C352 /* Assets.xcassets */,
 				FED811E82786022C00F5C352 /* LaunchScreen.storyboard */,
@@ -261,8 +270,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FED8121B27860C8F00F5C352 /* TableViewCells.swift in Sources */,
+				FED8121627860C4C00F5C352 /* FilterViewController.swift in Sources */,
 				FED811E52786022900F5C352 /* spacex_missions.xcdatamodeld in Sources */,
 				FED811DF2786022900F5C352 /* ViewController.swift in Sources */,
+				FED81211278606DD00F5C352 /* dataCoding.swift in Sources */,
 				FED811DB2786022900F5C352 /* AppDelegate.swift in Sources */,
 				FED811DD2786022900F5C352 /* SceneDelegate.swift in Sources */,
 			);
